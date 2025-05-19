@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "steve-mcp"
+version = "0.1.0"
+description = "MCP server for Steve AI OS"
+authors = ["Alvin Setiadi <alvin@walturn.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+requests = "^2.31.0"
+python-dotenv = "^1.0.0"
+mcp = {extras = ["cli"], version = "^1.6.0"}
+uvicorn = "^0.34.0"
+httpx = "^0.27.0"
+motor = "^3.3.2"
+pymongo = "^4.6.1"
+
+[tool.poetry.dev-dependencies]
+black = "^23.10.0"
+isort = "^5.12.0"
+mypy = "^1.6.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
