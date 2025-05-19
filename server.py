@@ -23,11 +23,11 @@ mcp = FastMCP("Steve AI OS")
 
 # Configuration
 DEBUG = os.environ.get("DEBUG", "false").lower() == "true"
-STEVE_API_BASE_URL = os.environ.get("STEVE_API_BASE_URL", "https://steve-backend-production.up.railway.app")
+STEVE_API_BASE_URL = os.environ.get("STEVE_API_BASE_URL")
 
 # MongoDB connection
-MONGODB_URL = "mongodb+srv://steve:uW0NEf27yTrwsMGF@prod-steve-uswest-01.patwp.mongodb.net/?retryWrites=true&w=majority&appName=prod-steve-uswest-01"
-DATABASE_NAME = os.environ.get("DATABASE_NAME", "steve")
+MONGODB_URL = os.environ.get("MONGODB_URL")
+DATABASE_NAME = os.environ.get("DATABASE_NAME")
 
 # Initialize MongoDB client
 try:
